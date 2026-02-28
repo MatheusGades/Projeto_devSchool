@@ -3,3 +3,4 @@ sqlalchemy
 psycopg2
 flask-sqlalchemy
 faker
+gunicorn
