@@ -24,11 +24,14 @@ source venv/bin/activate    (Linux/Mac)
 pip install -r requirements.txt
 ```
 
-4. Configure a conexao em `conf/conexao.py` com sua URL do PostgreSQL
-
-5. Execute o SQL para criar as tabelas:
+4. Crie um arquivo `.env` na raiz com:
 ```
-psql -U postgres -d devschool -f create_tables.sql
+DATABASE_URL=postgresql+psycopg2://postgres:SUASENHA@localhost:5432/devschool
+```
+
+5. Crie as tabelas acessando a rota de setup:
+```
+GET /setup
 ```
 
 6. Rode o seeder de produtos:
@@ -47,6 +50,7 @@ python app.py
 |--------|-----------------------|-------------------------|
 | POST   | /registro             | Criar usuario           |
 | POST   | /login                | Autenticar              |
+| GET    | /setup                | Criar tabelas no banco  |
 | POST   | /leads/cadastro       | Criar lead              |
 | GET    | /leads/listar         | Listar leads            |
 | GET    | /leads/buscar/<id>    | Buscar lead por id      |
@@ -61,4 +65,4 @@ python app.py
 
 ## Deploy
 
-API disponivel em: https://devschool.onrender.com
+API disponivel em: https://projeto-devschool.onrender.com
