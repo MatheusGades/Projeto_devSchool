@@ -1,0 +1,525 @@
+{
+  "info": {
+    "_postman_id": "a1a6db18-03a0-4fe3-ba7e-0d32b47fd46f",
+    "name": "DevSchool",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "48293707"
+  },
+  "item": [
+    {
+      "name": "users",
+      "item": [
+        {
+          "name": "Cadastro",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "nome",
+                  "value": "",
+                  "type": "text",
+                  "id": 0
+                },
+                {
+                  "key": "email",
+                  "value": "",
+                  "type": "text",
+                  "id": 1
+                },
+                {
+                  "key": "senha",
+                  "value": "",
+                  "type": "text",
+                  "id": 2
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://127.0.0.1:5000/users/registro",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "users",
+                "registro"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "login",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "nome",
+                  "value": "",
+                  "type": "text",
+                  "id": 0
+                },
+                {
+                  "key": "email",
+                  "value": "agmail.com",
+                  "type": "text",
+                  "id": 1
+                },
+                {
+                  "key": "senha",
+                  "value": "blabla123",
+                  "type": "text",
+                  "id": 2
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://127.0.0.1:5000/users/login",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "users",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "leads",
+      "item": [
+        {
+          "name": "cadastro",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "nome",
+                  "value": "Junior Richards",
+                  "type": "text",
+                  "id": 0
+                },
+                {
+                  "key": "email",
+                  "value": "junior@gmail.com",
+                  "type": "text",
+                  "id": 1
+                },
+                {
+                  "key": "telefone",
+                  "value": "",
+                  "type": "text",
+                  "id": 2
+                },
+                {
+                  "key": "status",
+                  "value": "",
+                  "type": "text",
+                  "id": 3
+                },
+                {
+                  "key": "nivel_conhecimento",
+                  "value": "Avancado",
+                  "type": "text",
+                  "id": 4
+                },
+                {
+                  "key": "interesse_curso",
+                  "value": "Java",
+                  "type": "text",
+                  "id": 5
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://127.0.0.1:5000/leads/cadastro",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "leads",
+                "cadastro"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "listar",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:5000/leads/listar",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "leads",
+                "listar"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "buscar",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:5000/leads/buscar/2",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "leads",
+                "buscar",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "atualizar",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "nome",
+                  "value": "Junior Richards",
+                  "type": "text",
+                  "id": 0
+                },
+                {
+                  "key": "email",
+                  "value": "junior@gmail.com",
+                  "type": "text",
+                  "id": 1
+                },
+                {
+                  "key": "telefone",
+                  "value": "51999221111",
+                  "type": "text",
+                  "id": 2
+                },
+                {
+                  "key": "status",
+                  "value": "Matriculado",
+                  "type": "text",
+                  "id": 3
+                },
+                {
+                  "key": "nivel_conhecimento",
+                  "value": "Iniciante",
+                  "type": "text",
+                  "id": 4
+                },
+                {
+                  "key": "interesse_curso",
+                  "value": "Python",
+                  "type": "text",
+                  "id": 5
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://127.0.0.1:5000/leads/atualizar/4",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "leads",
+                "atualizar",
+                "4"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "deletar",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "http://127.0.0.1:5000/leads/deletar/4",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "leads",
+                "deletar",
+                "4"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "produtos",
+      "item": [
+        {
+          "name": "listar",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "http://127.0.0.1:5000/produtos/listar",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "produtos",
+                "listar"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "buscar",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:5000/produtos/buscar/1",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "produtos",
+                "buscar",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "cadastro",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:5000/produtos/cadastro",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "produtos",
+                "cadastro"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "atualizar",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:5000/produtos/atualizar/1",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "produtos",
+                "atualizar",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:5000/produtos/deletar/1",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "produtos",
+                "deletar",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "vendas",
+      "item": [
+        {
+          "name": "criar",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "lead_id",
+                  "value": "2",
+                  "type": "text",
+                  "id": 0
+                },
+                {
+                  "key": "produto_id",
+                  "value": "32",
+                  "type": "text",
+                  "id": 1
+                },
+                {
+                  "key": "quantidade",
+                  "value": "5",
+                  "type": "text",
+                  "id": 2
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://127.0.0.1:5000/vendas/criar",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "vendas",
+                "criar"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "dashboard",
+      "item": [
+        {
+          "name": "metricas",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:5000/dashboard/metrics",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "dashboard",
+                "metrics"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
